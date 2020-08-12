@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://i18njs.com/js/i18n.min.js" ></script>
+</head>
+<body>
+    <script>
+        en = i18n.create({
+            values:{
+                "HELLO":"Hello"
+            }
+        });
+
+        ja = i18n.create({
+            values:{
+                "HELLO":"こんにちは"
+            }
+        });
+
+        console.log(en("HELLO"));
+        // -> Hello
+
+        console.log(ja("HELLO"));
+        // -> こんにちは
+
+    </script>
+</body>
+</html>
